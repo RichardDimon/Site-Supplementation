@@ -19,10 +19,11 @@
 ## - Proportion of related pairs is calculated and saved to csv outputs
 ## - Supplementation stops only when BOTH conditions are met:
 ##     1) min common allele capture across reps > 0.90
-##     2) max mean kinship across reps < 
+##     2) max mean kinship across reps < 0.0442, an unrelated kinship threshold based on Manichaikul et al. (2010)
 ## - There are 2 supplementation strategies: 
 ##      1) Sampling up to 1 individual per site (minimise total individuals to visit)
 ##      2) Sampling up to 5 individuals per site (minimise total sites to visit)
+
 
 
 # 1. MAIN SETTINGS TO EDIT ==============================
