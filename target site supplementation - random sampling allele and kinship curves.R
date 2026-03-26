@@ -1,4 +1,4 @@
-## Randomised supplementation allele curves 
+## Randomised supplementation allele and kinship curves 
 ## created by R. Dimon March 2026 with helper functions using GPT-5.3
 ## Focal target site + random supplementation from all available sites in the dataset
 ##
@@ -19,7 +19,10 @@
 ## - Proportion of related pairs is calculated and saved to csv outputs
 ## - Supplementation stops only when BOTH conditions are met:
 ##     1) min common allele capture across reps > 0.90
-##     2) max mean kinship across reps < kin_unrelated_thresh
+##     2) max mean kinship across reps < 
+## - There are 2 supplementation strategies: 
+##      1) Sampling up to 1 individual per site (minimise total individuals to visit)
+##      2) Sampling up to 5 individuals per site (minimise total sites to visit)
 
 
 # 1. MAIN SETTINGS TO EDIT ==============================
